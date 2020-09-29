@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+fieldset{
+  border-color:#ff6ec7;
+  margin: 2% 15%;
+  border-radius:10px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+input{
+  width: 70%;
+  height: 50px;
+  border: 2px solid #2f6627;
+  border-radius: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  outline: none;
+}
+
+.heading{
+  text-align: center;
+  font-size: 40px;
+  color: #66bfbf;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+}
+th{
+  color: #232d60;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat",sans-serif;
+}
+td{
+  color:#555;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
