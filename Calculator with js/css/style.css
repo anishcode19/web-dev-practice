@@ -1,0 +1,124 @@
+body{
+  font-family: "Open Sans",sans-serif;
+  background: black;
+}
+
+#container{
+  width:90vw;
+  height:90vh;
+  background: url(../img/img-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:5vh auto 5vh;
+  display: grid;
+  place-items:center;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#calculator{
+  width:320px;
+  height: 520px;
+  background-color: #eaedef;
+  /* opacity: .8; */
+  border-radius: 5px;
+  box-shadow:
+            0 2.8px 2.2px rgba(0,0,0,0.034),
+            0 6.7px 5.3px rgba(0,0,0,0.048),
+            0 12.5px 10px rgba(0,0,0,0.06),
+            0 22.3px 17.9px rgba(0,0,0,0.072),
+            0 41.8px 33.4px rgba(0,0,0,0.086),
+            0 100px 80px rgba(0,0,0,0.12);
+}
+
+#result{
+  height: 120px;
+
+}
+
+#history{
+  text-align: right;
+  height: 20px;
+  margin:0 20px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #919191;
+}
+
+#output{
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#keyboard{
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items:center;
+}
+
+.operator, .number, .empty{
+  width:50px;
+  height:50px;
+  margin:15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.number, .empty{
+  background-color: #eaedef;
+}
+
+.number, .operator{
+  cursor: pointer;
+}
+
+.operator:active, .number:active{
+  font-size: 13px;
+}
+
+.operator:focus, .number:focus{
+  outline: none;
+}
+
+button:nth-child(4){
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+
+button:nth-child(8){
+  font-size: 20px;
+  background-color: #ffa500;
+}
+
+button:nth-child(12){
+  font-size: 20px;
+  background-color: #f08080;
+}
+
+button:nth-child(16){
+  font-size: 20px;
+  background-color: #7d93e0;
+}
+
+button:nth-child(20){
+  font-size: 20px;
+  background-color: #9477af;
+}
+
+/* title */
+
+h1{
+  font-size: 85px;
+  color: #fff;
+  background: #20b2aa;
+  opacity: .8;
+  padding: 10px;
+  border-radius: 10px;
+}
