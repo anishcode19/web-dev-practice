@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <fieldset>
+      <form onsubmit="return validation()" action="#"class="form">
+        <h1 class="heading">Form Validation</h1>
+        <div >
+          <label>Username </label>
+          <input type="text" name="username" value=""id="user">
+          <span id="username"></span>
+        </div>
+        <div >
+          <label class="one">Password </label>
+          <input type="text" name="password" value=""id="pass">
+          <span id="password"></span>
+        </div>
+        <div >
+          <label class="one">Confirm Password </label>
+          <input type="text" name="Confirm password" value=""id="confirmpass">
+          <span id="conpassword"></span>
+        </div>
+        <div >
+          <label class="one">Mobile Number </label>
+          <input type="text" name="Mobile number" value=""id="mobilenumber">
+          <span id="number"></span>
+        </div>
+        <div >
+          <label class="one">Email </label>
+          <input type="text" name="Email" value=""id="email">
+          <span id="emailid"></span>
+        </div>
+        <input type="submit"class="submit" name="submit" value="Submit">
+      </form>
+    </fieldset>
+
+    <script src="javascript/script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  background: url(../img/img-5.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items:center;
+}
+fieldset{
+  border-color: #ff6ec7;
+  border-radius: 10px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+form{
+  width:50vw;
+  padding: 30px;
+  background-color: #ccc;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.heading{
+  text-align: center;
+  font-size: 32px;
+  font-family: "Sacramento",cursive;
+  color: #232d60;
+  margin: 0 auto 25px;
+}
+label{
+  display:inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  font-family: "Montserrat",sans-serif;
+}
+input{
+  width:100%;
+  border:1px solid #000;
+  font-size: 22px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  outline: none;
+}
+.one{
+  margin-top: 22px;
+}
+
+.submit{
+  margin: 35px auto 0;
+  color: #fff;
+  text-transform: uppercase;
+  background: #232d60;
+  width: 150px;
+  border: 2.5px solid #10AC84;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: background ,transform;
+}
+
+.form .submit:hover , .form .submit:active,.form .submit:focus{
+  background: #10AC84;
+  transform: scale(1.1);
+}
+span{
+  color:red;
+  font-family: "Montserrat",sans-serif;
+}
