@@ -1,0 +1,174 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Merriweather Sans', sans-serif; */
+
+html {
+  font-size: 62.5%;
+}
+
+/* 10/16=0.625*100  we want 1rem =10px (but actully 1rem=16px) */
+
+*{
+  padding: 0;
+  margin: 0;
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+body{
+  width:100%;
+  height:100vh;
+  /* background: linear-gradient(to left, rgba(116, 235, 213, 0.4),rgba(159, 172, 230, 0.2)),url(../img/img-16.jpg); */
+  background: url(../img/img-16.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items:center;
+}
+
+fieldset{
+  border-color: #ff7171;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.container{
+  background: rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  width:40vw;
+}
+
+.headding{
+  padding:2.5rem 0;
+  background: linear-gradient(90deg,rgba(131, 88, 88, 0.5),rgba(100, 226, 145, 0.5));
+}
+
+.headding h1{
+  color:#fff;
+  font-family: 'Lobster Two', cursive;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form{
+  padding: 3rem;
+}
+
+.form_control{
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+.form_control label{
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: #ccc;
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  padding: 0 0 0 .3rem;
+  letter-spacing: .1rem;
+}
+
+.form_control input{
+  width:100%;
+  border:.2rem solid #aaa;
+  border-radius: .5rem;
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  letter-spacing: .1rem;
+  /* outline: none; */
+}
+
+.form_control input:focus{
+  outline: none;
+  border: .3rem solid #a37eba;
+}
+
+.form_control.success input{
+  border-color: #2ecc71;
+}
+
+.form_control.error input{
+  border-color: #e74e3c;
+}
+
+.form_control i{
+  position: absolute;
+  right:1.5rem;
+  top: 5rem;
+  font-size: 1.8rem;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+  color:#e74e3c;
+  visibility: visible;
+}
+
+.form_control small{
+  color: #e74e3c;
+  position: absolute;
+  left:.5rem;
+  font-size: 1.2rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+.form_control.error small{
+  letter-spacing: .2rem;
+  visibility: hidden;
+}
+
+.submit{
+  background: linear-gradient(90deg ,rgba(249, 213, 110, .5),rgba(29, 211, 189, .3));
+  border-radius: 6px;
+  border:0;
+  color: #fff;
+  display: inline-block;
+  width:15rem;
+  font-family:'Anton', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  margin-top: 1.6rem;
+  outline: 0;
+  letter-spacing: .2rem;
+}
+.btn{
+  display: grid;
+  place-items:center;
+}
+
+.form .submit:hover{
+  background: linear-gradient(-90deg ,rgba(249, 213, 110, .5),rgba(29, 211, 189, .3));
+}
+
+
+@media (max-width:998px) {
+  .container{
+    width:calc(100vw - 35vw);
+    max-width:100%;
+  }
+
+  .submit{
+    margin-top:1rem;
+    font-size: 1.4rem;
+  }
+  .headding h1{
+    font-size: 2rem;
+  }
+  .form{
+    padding: 2.5rem;
+  }
+}
