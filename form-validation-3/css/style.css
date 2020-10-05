@@ -105,12 +105,12 @@ fieldset{
   visibility: hidden;
 }
 
-.form-control.success i.fa-check-circle{
+.form_control.success i.fa-check-circle{
   color:#2ecc71;
   visibility: visible;
 }
 
-.form-control.error i.fa-exclamation-circle{
+.form_control.error i.fa-exclamation-circle{
   color:#e74e3c;
   visibility: visible;
 }
@@ -127,7 +127,7 @@ fieldset{
 
 .form_control.error small{
   letter-spacing: .2rem;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .submit{
