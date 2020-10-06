@@ -18,6 +18,9 @@ function printOutput(num){
   }
 }
 function getFormattedNumber(num){
+  if(num=="-"){
+    return "";
+  }
   var n=Number(num);
   var value=n.toLocaleString("en");
   return value;
@@ -48,17 +51,18 @@ for(var i=0;i<operator.length;i++){
           history=history.substr(0,history.length-1);
         }
       }
-      if(output!=""||history!=""){
-        output=ouyput==?output:reversenumberFormat(output);
+      if(output!="" || history!=""){
+        output= output ==""? output : reversenumberFormat(output);
         history=history+output;
         if(this.id=="="){
           var result=eval(history);
           printOutput(result);
           printHistory("");
-        }else{
+        }
+        else{
           history=history+this.id;
           printHistory(history);
-          printHistory("");
+          printOutput("");
         }
       }
     }
@@ -73,5 +77,5 @@ for(var i=0;i<number.length;i++){
       output=output+this.id;
       printOutput(output);
     }
-  })
+  });
 }
