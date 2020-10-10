@@ -1,0 +1,155 @@
+body {
+  background:url(../img/img-29.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+body, button, input {
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: rgba(100, 149, 143, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  /* box-shadow: 0 20px 40px rgba(100, 149, 143, 0.4); */
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.type{
+  animation: type 2s ;
+  animation-delay: 1s;
+  animation-timing-function: steps(5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  white-space: nowrap;
+  border-right: 4px solid #00334e;
+}
+
+@keyframes type {
+  0%{
+    width:5ch;
+  }
+  100%{
+    width: 0ch;
+  }
+
+}
+
+
+.app-title {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  color: #00334e;
+  font-size: 26px;
+  text-transform: uppercase;
+  border-left: 4px solid #00334e;
+  padding: 10px;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #FFF;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #00334e;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  transition: .4s;
+  transition-property: transform;
+}
+
+.app-form-button:hover {
+  color: #440047;
+  transform: scale(1.1);
+}
+
+.showdata{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding-top: -10px;
+  padding-bottom: 10px;
+}

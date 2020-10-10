@@ -2,6 +2,7 @@ function getHistory(){
   return document.getElementById("history-value").innerText;
 }
 
+
 function printHistory(num){
   document.getElementById("history-value").innerText=num;
 }
@@ -9,25 +10,30 @@ function printHistory(num){
 function getOutput(){
   return document.getElementById("output-value").innerText;
 }
+
 function printOutput(num){
   if(num==""){
     document.getElementById("output-value").innerText=num;
-  }
-  else{
+  }else{
     document.getElementById("output-value").innerText=getFormattedNumber(num);
   }
 }
+
 function getFormattedNumber(num){
   if(num=="-"){
     return "";
   }
+  // for "," seperated value
   var n=Number(num);
   var value=n.toLocaleString("en");
   return value;
 }
+
+// to convert into original formate back e.g. 1,234 => 1234 to calculate
 function reversenumberFormat(num){
   return Number(num.replace(/,/g,''));
 }
+
 
 var operator=document.getElementsByClassName("operator");
 for(var i=0;i<operator.length;i++){

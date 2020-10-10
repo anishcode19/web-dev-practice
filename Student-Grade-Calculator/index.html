@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <div class="animated infinite pulse">
+                Student <br> Grade <br> <p class="type">Calcy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="WEB PROGRAMMING" id="wd">
+              </div>
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="MATHS" id="maths">
+              </div>
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="COMPUTER" id="comp">
+              </div>
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="PHYSICS" id="phy">
+              </div>
+              <div>
+                <input type="button" name="" value="showPercentage" class="app-form-button" onclick="calcy()">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="app-form-group showdata">
+          <p id="showData"> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javaScript/index.js" charset="utf-8"></script>
+</body>
+
+</html>
