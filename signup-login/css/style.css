@@ -1,0 +1,146 @@
+html{
+  font-size: 62.5%;
+  /* 10/16 *100= 62.5%  1rem=16px and now 1rem=10px*/
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/img-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.form{
+  width:38rem;
+  height: 48rem;
+  position: relative;
+  margin: 6vh auto;
+  background: rgba(255, 255, 255, 1);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.button-box{
+  text-align: center;
+  width: 22rem;
+  margin: 3.5rem auto;
+  position: relative;
+  box-shadow: 0 0 2rem 0.9rem #ff61241f;
+  border-radius: 3rem;
+}
+
+.toggle-btn{
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width:11rem;
+  height: 100%;
+  background: linear-gradient(to right,#ff105f,#ffad06);
+  border-radius: 3rem;
+  transition: .5s;
+  /* transition-property:  */
+
+}
+
+.social-icons{
+  margin: 3rem auto;
+  text-align: center;
+  font-size:3rem;
+}
+
+a{
+  text-decoration: none;
+  margin: 0 1.2rem;
+}
+
+i{
+  box-shadow: 0 0 2rem 0 #7f7f7f3d;
+  border-radius:3rem;
+  padding: 1rem;
+}
+
+.icon-1{
+  color: transparent;
+  background-image: linear-gradient(45deg, #FFDF9E, #E56969,#8A49A1);
+  -webkit-background-clip:text;
+  font-weight: 600;
+}
+
+.icon-2{
+  color: #4ECCE8;
+}
+
+.icon-3{
+  color: #0e76a8;
+}
+
+
+
+.input{
+  margin: 0 auto;
+  top: 18rem;
+  position: absolute;
+  width:28rem;
+  transition: .5s;
+}
+
+.email, .username, .password{
+
+  width:100%;
+  padding: 1rem 0;
+  margin: .5rem 0;
+  border: 0;
+  border-bottom: .1rem solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn{
+  width:85%;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right,#ff105f,#ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 3rem;
+}
+
+.checkbox{
+  margin: 3rem 1rem 3rem 0;
+}
+
+span{
+  color: #777;
+  font-size: 1.2rem;
+  bottom:6.5rem;
+  position: absolute;
+}
+
+#signin{
+  left: 5rem;
+}
+
+#signup{
+  left:45rem;
+}

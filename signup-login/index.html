@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- meta tag for responsivness -->
+    <meta name="viewport" content="width=device-width,initial-width=1.0">
+    <!-- title -->
+    <title>login/sign-up</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button"class="toggle-btn" name="button"onclick="signin()">SignIn</button>
+          <button type="button"class="toggle-btn" name="button"onclick="signup()">SignUp</button>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com">
+            <i class="icon-1 fab fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com">
+            <i class="icon-2 fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com">
+            <i class="icon-3 fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="form-container">
+        <form id="signin" class="input">
+          <input type="text"class="username" name="" value=""placeholder="User Id">
+          <input type="password"class="password" name="" value=""placeholder="password">
+          <input type="checkbox"class="checkbox" name="" value=""><span>Remember Password</span>
+          <button type="submit"class="submit-btn" name="button">Sign In</button>
+        </form>
+
+        <form id="signup" class="input">
+          <input type="text"class="username" name="" value=""placeholder="User Id">
+          <input type="email"class="email" name="" value=""placeholder="email id">
+          <input type="password"class="password" name="" value=""placeholder="password">
+          <input type="checkbox"class="checkbox" name="" value=""><span>I agree to the terms & conditions</span>
+          <button type="submit"class="submit-btn" name="button">Sign Up</button>
+        </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+    
+      var x= document.getElementById("signin");
+      var y= document.getElementById("signup");
+      var z= document.getElementById("btn");
+
+      function signup(){
+        x.style.left="-40rem";
+        y.style.left="5rem";
+        z.style.left="11rem";
+
+
+      }
+
+      function signin(){
+        x.style.left="5rem";
+        y.style.left="45rem";
+        z.style.left="0";
+
+
+      }
+
+    </script>
+  </body>
+</html>
