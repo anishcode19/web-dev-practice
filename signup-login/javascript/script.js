@@ -94,7 +94,7 @@ const validate = () => {
 
 function setErrorMsg(input){
   const formControl = input.parentElement;
-  formControl.className="input error;"
+  formControl.className="form_control error";
 }
 
 function setSuccessMsg(input){
