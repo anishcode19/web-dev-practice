@@ -144,3 +144,11 @@ span{
 #signup{
   left:45rem;
 }
+
+.input.success input{
+  border-color: #2ecc71;
+}
+
+.input.error input{
+  border-color: #e74e3c;
+}

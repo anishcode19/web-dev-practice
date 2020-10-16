@@ -4,6 +4,8 @@ body{
   height:100vh;
   background: url(../img/img-1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   place-items:center;
 }
@@ -62,6 +64,7 @@ body{
 
 .form input:focus{
   width: 300px;
+  border-color: #10AC84;
 }
 
 .form button{
@@ -82,6 +85,38 @@ body{
 .form button:hover , .form button:active,.form button:focus{
   background: #10AC84;
   transform: scale(1.1);
+  border-color: #2E86DE;
+}
+
+.form_control{
+  position: relative;
+}
+
+.form_control.success input{
+  border-color: #2ecc71;
+}
+
+.form_control.error input{
+  border-color: #e74e3c;
+}
+
+.form_control i{
+  position: absolute;
+  right:1.8rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  visibility: hidden;
+}
+
+.form_control.success i.fa-check-circle{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form_control.error i.fa-exclamation-circle{
+  color:#e74e3c;
+  visibility: visible;
 }
 
 .form .options{

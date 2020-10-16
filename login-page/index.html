@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -13,21 +14,32 @@
     <div class="form">
       <!-- login form Start -->
 
-      <form class="" action="index.html" method="post">
+      <form class=""id="form">
         <h2>Login</h2>
         <div class="icons">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-google"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-        <input type="text" name="" value=""placeholder="Username"required>
-        <input type="password" name="" value=""placeholder="Password"required>
-        <button type="submit" name="button">Login</button>
+        <div class="form_control">
+        <input type="text"id="username" name="" value=""placeholder="Username"required>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="form_control">
+        <input type="password" id="password"name="" value=""placeholder="Password"required>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <button type="submit" name="button"id="login"onclick="validation()">Login</button>
         <p class="options">Not Registered? <a href="#">Create an Account</a></p>
       </form>
 
       <!-- loginform end -->
     </div>
     <!-- form Area end -->
+
+    <!-- javascript link -->
+    <script src="javascript/script.js" charset="utf-8"></script>
   </body>
 </html>
