@@ -18,18 +18,54 @@
       <div class="header">
         <a href="#"class="button">
           <i class="fas fa-bars"></i>
-          <span class="sr"> Menu Bar</span>
+          <!-- <span class="sr"> Menu Bar</span> -->
         </a>
         <p>Now Playing</p>
         <a href="#"class="button">
           <label for="">
             <input type="checkbox" name="theme" value="">
-            <span class="btn sr">Search</span>
+            <!-- <span class="btn sr">Search</span> -->
             <i class="fas fa-moon"></i>
           </label>
         </a>
       </div>
-      <img src="images/anish-1.jpg" alt="album"id="">
+      <img src="images/anish-1.jpg" alt="album"id="image" class="image">
+      <div class="information">
+        <h1 id="playlist_status">a</h1>
+        <p id="playlist_artist">b</p>
+      </div>
+      <div class="progress">
+        <div class="progress-time">
+          <span id="currenttimetext"class="left">00:00</span>
+          <span id="durationtimetext"class="rigth">00:00</span>
+        </div>
+        <div class="progress-bar">
+          <input type="range" name=""id="seekslider" class="seekslider"min="0"max="100" value="0"step="1">
+        </div>
+      </div>
+      <ul class="buttons">
+        <span id="random" class="shuffle button button-sm">
+          <i class="fas fa-random fa-sm"></i>
+        </span>
+        <span id="prevbtn" class="prev button button-md">
+          <i class="fas fa-step-backward"></i>
+        </span>
+        <span id="playpausebtn" class="playpause button button-lg">
+          <i class="fas fa-play fa-lg"></i>
+          <i class="fas fa-pause fa-lg"></i>
+
+        </span>
+        <span id="nextbtn" class="next button button-md">
+          <i class="fas fa-step-forward"></i>
+        </span>
+        <span id="repeat" class="loop button button-sm">
+          <i class="fas fa-circle-notch fa-sm"></i>
+        </span>
+      </ul>
+      <div class="bar"></div>
     </main>
+
+    <!-- script link -->
+    <script src="javascript/script.js" charset="utf-8"></script>
   </body>
 </html>
