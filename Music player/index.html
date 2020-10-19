@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme ="light">
   <head>
     <meta charset="utf-8">
     <!-- responsive -->
@@ -18,12 +18,12 @@
       <div class="header">
         <a href="#"class="button">
           <i class="fas fa-bars"></i>
-          <!-- <span class="sr"> Menu Bar</span> -->
+          <!-- <span class="sr-only"> Menu Bar</span> -->
         </a>
         <p>Now Playing</p>
         <a href="#"class="button">
-          <label for="">
-            <input type="checkbox" name="theme" value="">
+          <label>
+            <input type="checkbox" name="theme">
             <!-- <span class="btn sr">Search</span> -->
             <i class="fas fa-moon"></i>
           </label>
@@ -31,8 +31,8 @@
       </div>
       <img src="images/anish-1.jpg" alt="album"id="image" class="image">
       <div class="information">
-        <h1 id="playlist_status">a</h1>
-        <p id="playlist_artist">b</p>
+        <h1 id="playlist_status"></h1>
+        <p id="playlist_artist"></p>
       </div>
       <div class="progress">
         <div class="progress-time">
@@ -64,7 +64,9 @@
       </ul>
       <div class="bar"></div>
     </main>
-
+    <!-- jQuery link -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- script link -->
     <script src="javascript/script.js" charset="utf-8"></script>
   </body>

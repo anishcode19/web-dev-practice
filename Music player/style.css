@@ -17,9 +17,9 @@ html{
 }
 
 
-html[data-theme="dark"]{
+html[data-theme='dark']{
   --bg:  #121212;
-  --color-text: #2e2e2e;
+  --color-text: #e2e2e2;
   --banner:#fefefe;
   --color-shadow:-3px -3px 10px  rgba(255, 255, 255, 0.05),
   3px 3px 15px rgba(0, 0, 0, 0.5);
@@ -55,7 +55,7 @@ a{
   place-items:center;
 }
 
-.header .button{
+.header > .button{
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -82,7 +82,7 @@ a{
 }
 
 .information h1{
-  color: black;
+  color: var(--black);
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -102,6 +102,10 @@ a{
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+}
+
+.progress-item > p{
+  font-size: 0.65rem;
 }
 
 .buttons{
@@ -151,6 +155,30 @@ a{
   transform: translate(-50%, -50%);
   left: 50%;
   bottom: 1rem;
+}
+
+.playpause.active{
+  box-shadow: var(--color-inset-shadow);
+}
+
+.loop.active, .shuffle:active, .prev:active, .next:active{
+  box-shadow: var(--color-inset-shadow);
+}
+
+.fa-play{
+  display: block;
+}
+
+.fa-pause{
+  display: none;
+}
+
+.playpause.active .fa-play{
+  display: none;
+}
+
+.playpause.active .fa-pause{
+  display: block;
 }
 
 .seekslider{
