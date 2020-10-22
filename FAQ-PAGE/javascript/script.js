@@ -21,9 +21,11 @@ const questions = document.querySelectorAll(".question");
 
 questions.forEach(function(e){
   const btn = e.querySelector(".question-btn");
+  // console.log(e);
   // console.log(btn);
   btn.addEventListener("click",function(){
     questions.forEach(function(item){
+      // console.log(item);
       if(item !== e){
         item.classList.remove("show-text");
       }
