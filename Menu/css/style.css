@@ -72,6 +72,32 @@ p{
   margin :  0 auto;
 }
 
+.btn-Container{
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn{
+  background: transparent;
+  border-color: #c59d5f;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin:0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  color: #c59d5f;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  outline-style: none;
+}
+
+.filter-btn:hover {
+  background: #c59d5f;
+  color: #fff;
+}
+
 .section-center{
   width:90vw;
   margin: 0 auto;
