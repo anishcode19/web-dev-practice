@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme ="light">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- title  -->
-    <title>Music Player</title>
+    <!-- title -->
+    <title>jockey</title>
     <!-- fontawesome code  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/a2b3da0c65.js"crossorigin="anonymous" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/a2b3da0c65.js"crossorigin="anonymous" charset="utf-8"> </script>
     <!-- external css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
     <main class="player">
       <div class="header">
         <a href="#"class="button">
           <i class="fas fa-bars"></i>
-          <!-- <span class="sr-only"> Menu Bar</span> -->
         </a>
         <p>Now Playing</p>
         <a href="#"class="button">
-          <label>
-            <input type="checkbox" name="theme">
-            <!-- <span class="btn sr">Search</span> -->
-            <i class="fas fa-moon"></i>
-          </label>
+          <i class="fas fa-dots"></i>
         </a>
       </div>
-      <img src="images/anish-1.jpg" alt="album"id="image" class="image">
-      <div class="information">
-        <h1 id="playlist_status"></h1>
-        <p id="playlist_artist"></p>
+
+      <img src="" alt="album"class="image"id="image">
+      <div class="info">
+        <h1 id="mName">Music Name</h1>
+        <p id="aName">Artist Name</p>
       </div>
+
       <div class="progress">
         <div class="progress-time">
           <span id="currenttimetext"class="left">00:00</span>
           <span id="durationtimetext"class="rigth">00:00</span>
         </div>
         <div class="progress-bar">
-          <input type="range" name=""id="seekslider" class="seekslider"min="0"max="100" value="0"step="1">
+          <input type="range" name=""id="seekslider"class="seekslider"min="0"max="100" value="0"step="1">
         </div>
       </div>
       <ul class="buttons">
@@ -63,10 +59,5 @@
       </ul>
       <div class="bar"></div>
     </main>
-    <!-- jQuery link -->
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- script link -->
-    <script src="javascript/script.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: "Poppins",sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+html{
+  --bg:#121212;
+  --color-text: #e2e2e2;
+  --banner: #fefefe;
+  --color-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),5px 5px 15px rgba(0, 0, 0, 0.5);
+  --color-inset-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.01),
+                        inset 2px 2px 6px rgba(0 ,0, 0, .8);
+}
+
+body{
+  background: var(--bg);
+  color: var(--color-text);
+  width:100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.player{
+  width:80%;
+  min-height: 550px;
+  max-width: 300px;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  box-shadow: var(--color-shadow);
+}
