@@ -78,10 +78,12 @@ a{
 .info h1{
   font-weight: 500;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .info p{
   font-size: 1.15rem;
+  text-align: center;
 }
 
 .progress{
