@@ -197,7 +197,7 @@ a{
 }
 
 .playpause.active .fa-play{
-  display: block;
+  display: none;
 }
 
 .playpause.active .fa-pause{
