@@ -17,7 +17,7 @@ body{
 /* font-family: 'Syne Mono', monospace; */
 
 .title{
-  width:100vw;
+  width:100%;
   height: 40vh;
   background: url(../img/title.jpg);
   background-position:center;
@@ -47,6 +47,40 @@ h2{
   transform: translate(-50%,-50%);
 }
 
+
+.btn-Container{
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  flex:1;
+}
+
+.filter-btn{
+  background: transparent;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Syne Mono', monospace;
+  color: rgba(20, 0, 10, 0.6);
+  border: .3rem solid #c59d5f;
+  outline: none;
+  text-transform: capitalize;
+  padding: 0.475rem 0.85rem;
+  margin:0 1rem;
+  transition: 0.6s;
+  transition-property: background ,color,border;
+}
+
+.filter-btn:hover{
+  background: rgba(20, 0, 10, 0.6);
+  color: #fff;
+  border-color: #fff;
+}
+
+.filter-btn:active{
+  border: .3rem solid #06C5CF;;
+}
+
 .sub-heading h3{
   font-size: 4rem;
   font-weight: bold;
@@ -63,7 +97,7 @@ h2{
   place-items:center;
   grid-template-columns:1fr 1fr;
   grid-template-rows: 4rem ,40rem;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   /* margin:5rem; */
 }
 
@@ -107,6 +141,7 @@ h2{
   text-transform: uppercase;
   margin-top: 7rem;
   font-weight: 300;
+  font-family: 'Syne Mono', monospace;
   transition: 0.8s;
   transition-property: transform, color;
 }
@@ -127,8 +162,9 @@ h2{
 }
 .menu-item .details p{
   margin: 30px 30px 0 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: 'Syne Mono', monospace;
   text-align: center;
   opacity: 0;
   transition: 0.6s;
@@ -179,6 +215,11 @@ h2{
   margin-right: 20px;
 }
 
+.footer{
+  height:5rem;
+  width:100%
+}
+
 @media (max-width:1080px) {
   .section-center{
     display: grid;
@@ -186,9 +227,20 @@ h2{
     place-items:center;
     grid-gap: 4rem;
   }
+
+  .filter-btn{
+    margin: 0.5rem;
+    padding: 0.3rem 0.7rem;
+  }
 }
 
-@media (max-width:400px) {
+@media (max-width:720px) {
+  h2{
+    color:#fff;
+  }
+}
+
+@media (max-width:360px) {
   .menu-item .details p{
     font-size: 16px;
     max-width: 440px;
@@ -198,6 +250,10 @@ h2{
 
   }
 }
+
+
+
+
 
 
 
