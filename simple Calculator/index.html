@@ -4,48 +4,48 @@
     <meta charset="utf-8">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Syne+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-    <div class="form_style">
-      <form class=""name="forms">
-        <input type="text" name="answer" value=""class="result">
-        <br>
-        <br>
-
-        <input type="button" name="" value=" 1 "onclick="forms.answer.value += '1' ">
-        <input type="button" name="" value=" 2 "onclick="forms.answer.value += '2' ">
-        <input type="button" name="" value=" 3 "onclick="forms.answer.value += '3' ">
-        <br>
-        <br>
-
-        <input type="button" name="" value=" 4 "onclick="forms.answer.value += '4' ">
-        <input type="button" name="" value=" 5 "onclick="forms.answer.value += '5' ">
-        <input type="button" name="" value=" 6 "onclick="forms.answer.value += '6' ">
-        <br>
-        <br>
-
-        <input type="button" name="" value=" 7 "onclick="forms.answer.value += '7' ">
-        <input type="button" name="" value=" 8 "onclick="forms.answer.value += '8' ">
-        <input type="button" name="" value=" 9 "onclick="forms.answer.value += '9' ">
-        <br>
-        <br>
-
-        <input type="button" name="" value=" + "onclick="forms.answer.value += '+' ">
-        <input type="button" name="" value=" - "onclick="forms.answer.value += '-' ">
-        <input type="button" name="" value=" * "onclick="forms.answer.value += '*' ">
-        <br>
-        <br>
-
-        <input type="button" name="" value=" / "onclick="forms.answer.value += '/' ">
-        <input type="button" name="" value=" 0 "onclick="forms.answer.value += '0' ">
-        <input type="button" name="" value=" = "onclick="forms.answer.value = eval(forms.answer.value) ">
-        <br>
-        <br>
-
-        <input type="button" name="" value="clear All" onclick="forms.answer.value='' " id="clear">
-      </form>
+      <div class="calculator">
+        <div class="result">
+          <div class="history">
+            <p class="history-value">1234</p>
+          </div>
+          <div class="output">
+            <p class="output-value">1234</p>
+          </div>
+        </div>
+        <div class="keyboard">
+          <button class="operator"id="clear">c</button>
+          <button class="operator"id="%">%</button>
+          <button class="operator"id="backspace">CE</button>
+          <button class="operator"id="/">&#247;</button>
+          <button class="number" id="7">7</button>
+          <button class="number" id="8">8</button>
+          <button class="number" id="9">9</button>
+          <button class="operator" id="*">&times;</button>
+          <button class="number" id="4">4</button>
+          <button class="number" id="5">5</button>
+          <button class="number" id="6">6</button>
+          <button class="operator" id="-">-</button>
+          <button class="number" id="1">1</button>
+          <button class="number" id="2">2</button>
+          <button class="number" id="3">3</button>
+          <button class="operator"id="+">+</button>
+          <button class="empty"id="empty"></button>
+          <button class="number"id="0">0</button>
+          <button class="empty"id="empty"></button>
+          <button class="operator"id="=">=</button>
+        </div>
+      </div>
     </div>
+    <!-- title -->
+    <div class="title">
+      <h2>Designed by</h2>
+      <h1>an0nym0u5_19</h1>
     </div>
+    <script src="javascript/script.js" charset="utf-8"></script>
   </body>
 </html>
