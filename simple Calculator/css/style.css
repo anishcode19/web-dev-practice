@@ -58,6 +58,8 @@ body{
   margin: 10px 20px;
   font-size: 28px;
   font-weight: bold;
+  overflow: hidden;
+
 }
 
 .keyboard{
