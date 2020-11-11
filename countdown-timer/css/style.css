@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,::after,::before{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+img{
+  width:100%;
+  display: block;
+}
+
+h3,h4{
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 0.875rem;
+}
+p{
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+
+@media screen and (min-width:800px) {
+  h3{
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  h4{
+    font-size: 1rem;
+    line-height: 1;
+  }
+  body{
+    font-size: 1rem;
+  }
+}
+
+.section{
+  padding: 5rem 0;
+}
+
+.section-center{
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1170px;
+}
+
+.gift-img{
+  margin-bottom: 2rem;
+}
+.gift-info h3{
+  text-transform: uppercase;
+  color: hsl(205, 72%, 37%);
+}
+
+.gift-info p{
+  color: hsl(209, 23%, 60%);
+}
+
+.date{
+  color: hsl(210, 22%, 49%);
+  font-size: 0.85rem;
+}
+
+
+@media screen and (min-width:992px) {
+  .section-center{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items:center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .gift-img{
+    margin-bottom: 0;
+  }
+}
+
+.gift-info p {
+  margin: 2rem 0;
+}
+.deadline {
+  display: flex;
+}
+.deadline-format {
+  background: hsl(209, 61%, 16%);
+  color: #fff;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* comment */
