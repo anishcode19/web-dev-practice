@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Today</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon-16x16.png">
-  </head>
-  <body>
 
-    <div class="main_container">
-      <div class="title_container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Today</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon-16x16.png">
+</head>
+
+<body>
+
+  <div class="main_container">
+    <div class="container">
+      <div class="">
         <div class="heading">
           <p>Hour</p>
         </div>
-        <div class="heading heading_2">
-          <p>Minute</p>
-        </div>
-        <div class="heading">
-          <p>Second</p>
-        </div>
-      </div>
 
-      <div class="container">
         <div class="time_container">
           <p id="hour_hand">12</p>
         </div>
+      </div>
+      <div class="">
+        <div class="heading heading_2">
+          <p>Minute</p>
+        </div>
         <div class="time_container">
           <p id="minute_hand"></p>
+        </div>
+      </div>
+      <div class="">
+        <div class="heading">
+          <p>Second</p>
         </div>
         <div class="time_container">
           <p id="second_hand"></p>
         </div>
       </div>
+      <div class="">
+        <div class="heading">
+          <p>Day/Night</p>
+        </div>
+        <div class="time_container">
+          <p id="AM_PM"></p>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
   <script src="javaScript/script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
