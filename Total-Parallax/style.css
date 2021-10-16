@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: sans-serif;
+  
+}
+body{
+  min-height: 200vh;
+  min-width: 200vw;
+  overflow-x: auto;
+}
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.layer{
+  width: 15vw;
+  height: 15vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FFFFFF;  
+  border-radius: 50%;
+  background-color: rgb(81, 16, 119);
+}
+
+@media only screen and (max-width: 768px){
+  *{
+    font-size: 17px;
+  }
+  .layer{
+    width: 18vw;
+    height: 18vw;
+  }
+}
